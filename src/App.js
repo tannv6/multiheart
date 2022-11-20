@@ -199,7 +199,7 @@ function App() {
             : context.lineTo(point.x, point.y);
         }
         context === null || context === void 0 ? void 0 : context.closePath();
-        context.fillStyle = "#d5288a";
+        context.fillStyle = "red";
         context === null || context === void 0 ? void 0 : context.fill();
         var image = new Image();
         image.src = canvas.toDataURL();
