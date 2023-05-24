@@ -19,7 +19,7 @@ canvas {
       #ffffff,
       #ffffff
     ),
-    url("https://honature.s3.ap-northeast-1.amazonaws.com/images/nhunhu2.png");
+    url("./Minh.PNG");
   background-size: cover;
   width: 300px;
   height: 300px;
