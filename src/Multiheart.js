@@ -2,8 +2,13 @@
 /* eslint-disable no-redeclare */
 import { useEffect } from "react";
 import "./App.css";
+import { useNavigate } from "react-router";
+
 
 function Multiheat() {
+
+    const navigate = useNavigate();
+
     useEffect(() => {
         var settings = {
             particles: {
@@ -272,12 +277,17 @@ function Multiheat() {
             }
         }
     }, []);
+
+    const handleTT = () => {
+        navigate('/totinh')
+    }
+
     return (
-        <div class="heaart-wrapper">
+        <div className="heaart-wrapper">
             <canvas id="pinkboard"></canvas>
-            <div class="image-lee-min-hoo"></div>
-            <div class="i-love-you-text">
-                <h1 class="heading">
+            <div className="image-lee-min-hoo"></div>
+            <div className="i-love-you-text" onClick={handleTT}>
+                <h1 className="heading">
                     <span>I</span> <span>L</span>
                     <span>o</span>
                     <span>v</span>
