@@ -13,19 +13,20 @@ body {
   right: 0;
 }
 
-/* @media (max-width: 1199px) {
+@media (max-width: 1199px) {
   #root {
     zoom: 1.2;
   }
-} */
+}
+
 @media (max-width: 767px) {
   #root {
     zoom: 0.8;
   }
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   #root {
     zoom: 1.5;
   }
-} */
+}
