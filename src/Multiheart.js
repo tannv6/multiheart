@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import "./App.css";
 import { useNavigate } from "react-router";
+import { logUserInfo } from "./functions";
 
 
 function Multiheat() {
@@ -281,6 +282,10 @@ function Multiheat() {
     const handleTT = () => {
         navigate('/totinh')
     }
+
+    useEffect(() => {
+        logUserInfo("heart")
+    }, [])
 
     return (
         <div className="heaart-wrapper">

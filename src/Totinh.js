@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { logUserInfo } from "./functions";
 function Totinh() {
+    useEffect(() => {
+        logUserInfo("totinh")
+    }, [])
     return <div className="totinh-container" style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0 }}>
         <center>
             <img src="https://timoday.edu.vn/wp-content/uploads/2020/06/love1.gif" width="300" height="25" />
