@@ -3,9 +3,16 @@ body {
   padding: 0;
   margin: 0;
   background: #ffffff;
+  overflow: hidden;
+  height: 100%;
 }
 
 #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+.fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,19 +21,24 @@ body {
 }
 
 @media (max-width: 1199px) {
-  #root {
+  .fixed {
     zoom: 1.2;
   }
 }
 
 @media (max-width: 767px) {
-  #root {
+  .fixed {
     zoom: 0.8;
   }
 }
 
 @media (min-width: 1200px) {
-  #root {
+  .fixed {
     zoom: 1.5;
   }
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("./fonts/NotoSans-Medium.ttf");
 }

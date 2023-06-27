@@ -288,18 +288,20 @@ function Multiheat() {
     }, [])
 
     return (
-        <div className="heaart-wrapper">
-            <canvas id="pinkboard"></canvas>
-            <div className="image-lee-min-hoo"></div>
-            <div className="i-love-you-text" onClick={handleTT}>
-                <h1 className="heading">
-                    <span>I</span> <span>L</span>
-                    <span>o</span>
-                    <span>v</span>
-                    <span>e</span> <span>Y</span>
-                    <span>o</span>
-                    <span>u</span>
-                </h1>
+        <div className="fixed">
+            <div className="heaart-wrapper">
+                <canvas id="pinkboard"></canvas>
+                <div className="image-lee-min-hoo"></div>
+                <div className="i-love-you-text" onClick={handleTT}>
+                    <h1 className="heading">
+                        <span>I</span> <span>L</span>
+                        <span>o</span>
+                        <span>v</span>
+                        <span>e</span> <span>Y</span>
+                        <span>o</span>
+                        <span>u</span>
+                    </h1>
+                </div>
             </div>
         </div>
     );
