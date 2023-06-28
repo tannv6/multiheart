@@ -85,7 +85,7 @@ canvas {
 }
 
 .thu {
-  font-family: "NotoSans";
+  font-family: "NotoSans", Arial, Helvetica, sans-serif;
   max-width: 100vw;
   text-align: justify;
   overflow: auto;
