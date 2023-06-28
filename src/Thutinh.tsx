@@ -80,7 +80,7 @@ function Thutinh() {
             Anh cũng không đủ lãng mạn để làm thơ tặng em, anh không đủ tài
             giỏi để có thể vẽ tranh tặng em, không giàu có để mua cả vườn hồng tặng em...
             Nhưng anh đủ hào phóng để tặng em cả trái tim anh,
-            đủ dũng cảm để bảo về em suốt cả cuộc đời, đủ chung thủy để mãi mãi chỉ yêu mình em đến hết cuộc đời...
+            đủ dũng cảm để bảo vệ em suốt cả cuộc đời, đủ chung thủy để mãi mãi chỉ yêu mình em đến hết cuộc đời...
             Hãy nhận lấy trái tim của anh nha cô gái.
         </div>
         <div className="text animate">
@@ -90,9 +90,9 @@ function Thutinh() {
             người anh để bút trên tờ kết hôn chính là em... <br />
             Người cùng anh gánh chịu tất cả buồn vui, sướng khổ, áp lực trong cuộc sống vẫn là em... <br />
             Và cuối cùng người cùng anh đi hết cuộc đời này cũng vẫn sẽ luôn là em..!</div>
-        <div className="text animate">
+        {/* <div className="text animate">
             Minh à, đồng ý làm người yêu anh nha.
-        </div>
+        </div> */}
     </div>)
 }
 
