@@ -62,7 +62,8 @@ function Thutinh() {
         <div className="text animate">Em có thể không phải là một cô gái xinh đẹp nhất trong mắt người khác,
             nhưng đối với anh em luôn là người con gái xinh đẹp nhất trên đời.
             Em có thể là một đứa ương bướng, lạnh lùng, nhưng anh tin rằng tình yêu của anh sẽ
-            vượt lên trên hết tất cả.<br />
+            vượt lên trên hết tất cả. Anh muốn em hiểu rằng không ai trên đời này có thể thay thế
+            được vị trí của em trong trái tim anh.<br />
         </div>
         <div className="text animate">
             Cuối cùng, anh muốn em biết rằng, Anh có thể không phải là một người
