@@ -20,7 +20,7 @@ function Thutinh() {
                     e.classList.add('animate-visible');
                 }
             });
-            if ((elm?.target?.scrollTop + elm?.target?.clientHeight) == elm?.target?.scrollHeight) {
+            if ((elm?.target?.scrollTop + elm?.target?.clientHeight) >= elm?.target?.scrollHeight) {
                 setShowHeart(true)
             }
         };
