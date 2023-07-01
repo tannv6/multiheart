@@ -10,7 +10,7 @@ function Totinh() {
     const navigate = useNavigate();
 
     const handleTT = () => {
-        navigate('/thutinh')
+        navigate('/letter')
     }
     useEffect(() => {
         logUserInfo("totinh")

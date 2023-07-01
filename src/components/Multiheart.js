@@ -279,7 +279,7 @@ function Multiheat() {
     }, []);
 
     const handleTT = () => {
-        navigate('/totinh')
+        navigate('/express')
     }
 
     useEffect(() => {

@@ -1,12 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import Hearts from "./Hearts";
 import { msgs } from "../utils/constants";
+import { logUserInfo } from "utils/functions";
 
 function Thutinh() {
     const elementRef = useRef<HTMLDivElement>(null);
     const [showHeart, setShowHeart] = useState(false);
     const [heartColor, setHeartColor] = useState("white");
     const refWrap = useRef<any>(null);
+    const isSentLog = useRef(false);
     useEffect(() => {
         const handleScroll = (elm?: any) => {
             const element: any = elementRef.current;
@@ -29,6 +31,10 @@ function Thutinh() {
                 element?.childNodes.forEach((e: any) => {
                     e.classList.add('show-heart');
                 });
+                if (!isSentLog.current) {
+                    logUserInfo("xongthutinh");
+                }
+                isSentLog.current = true;
             } else if (elm?.target?.scrollTop === 0) {
                 setHeartColor("white");
                 setShowHeart(false);
@@ -40,6 +46,7 @@ function Thutinh() {
         handleScroll();
         const thu = document.getElementById("thu_wrap");
         thu?.addEventListener('scroll', handleScroll);
+        logUserInfo("thutinh");
         return () => {
             thu?.removeEventListener('scroll', handleScroll);
         };

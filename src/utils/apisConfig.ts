@@ -1,5 +1,5 @@
 import axios, { Method } from "axios";
-// axios.defaults.baseURL = "https://on-luyen-api.onrender.com";
+axios.defaults.baseURL = "https://on-luyen-api.onrender.com";
 
 const api = async (url: any, method: Method, data: any) => {
   try {

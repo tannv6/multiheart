@@ -5,12 +5,11 @@ import Totinh from "./components/Totinh";
 import Thutinh from "./components/Thutinh";
 
 function App() {
-
   return (
     <Routes>
       <Route path="/" element={<Multiheat />} />
-      <Route path="totinh" element={<Totinh />} />
-      <Route path="thutinh" element={<Thutinh />} />
+      <Route path="/express" element={<Totinh />} />
+      <Route path="/letter" element={<Thutinh />} />
     </Routes>
   );
 }
