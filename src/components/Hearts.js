@@ -3,7 +3,7 @@ function Hearts() {
     useEffect(() => {
         var settings = {
             particles: {
-                length: 200,
+                length: 60,
                 duration: 1,
                 velocity: 100,
                 effect: -0.75,

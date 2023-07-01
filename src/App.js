@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router";
 import "./App.css";
-import Multiheat from "./Multiheart";
-import Totinh from "./Totinh";
-import Thutinh from "./Thutinh";
+import Multiheat from "./components/Multiheart";
+import Totinh from "./components/Totinh";
+import Thutinh from "./components/Thutinh";
 
 function App() {
 

@@ -23,7 +23,7 @@ canvas {
       #ffffff92,
       #ffffff,
       #ffffff),
-    url("./minh2.jpg");
+    url("./img/minh2.jpg");
   background-size: cover;
   width: 300px;
   height: 300px;
@@ -93,13 +93,62 @@ canvas {
 }
 
 .text {
-  background-color: #FF69B4;
+  background-color: #ff0000b7;
   padding: 10px;
   color: #ffffff;
   border-radius: 16px;
   font-size: 17px;
   user-select: none;
 }
+
+.text.show-heart {
+  background-color: #ff69b4c9;
+}
+
+/* 
+.text:nth-child(2) {
+  background-color: #f21818;
+}
+
+.text:nth-child(3) {
+  background-color: #f25d18;
+}
+
+.text:nth-child(4) {
+  background-color: #f29b18;
+}
+
+.text:nth-child(5) {
+  background-color: #f29b18;
+}
+
+.text:nth-child(6) {
+  background-color: #f25d18;
+}
+
+.text:nth-child(7) {
+  background-color: #f21818;
+}
+
+.text:nth-child(8) {
+  background-color: #ff0000;
+}
+
+.text:nth-child(9) {
+  background-color: #ff0000;
+}
+
+.text:nth-child(10) {
+  background-color: #f21818;
+}
+
+.text:nth-child(11) {
+  background-color: #f25d18;
+}
+
+.text:nth-child(12) {
+  background-color: #f29b18;
+} */
 
 .text+.text {
   margin-top: 15px;
@@ -125,6 +174,16 @@ canvas {
   position: relative;
   height: 100%;
   overflow: auto;
-  background-image: url("./minh2.jpg");
+  background-image: url("./img/minh2.jpg");
   background-size: cover;
+}
+
+.title {
+  color: #fff;
+  font-family: "NotoSans", Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+  background-color: #1876f2de;
 }

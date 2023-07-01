@@ -1,9 +1,8 @@
 /* eslint-disable eqeqeq */
 /* eslint-disable no-redeclare */
 import { useEffect } from "react";
-import "./App.css";
 import { useNavigate } from "react-router";
-import { logUserInfo } from "./functions";
+import { logUserInfo } from "../utils/functions";
 
 
 function Multiheat() {
