@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-function Hearts() {
+function Hearts({ heartColor }) {
     useEffect(() => {
         var settings = {
             particles: {
@@ -195,7 +195,7 @@ function Hearts() {
                         : context.lineTo(point.x, point.y);
                 }
                 context === null || context === void 0 ? void 0 : context.closePath();
-                context.fillStyle = "red";
+                context.fillStyle = heartColor;
                 context === null || context === void 0 ? void 0 : context.fill();
                 var image = new Image();
                 image.src = canvas.toDataURL();

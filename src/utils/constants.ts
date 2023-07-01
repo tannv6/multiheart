@@ -9,16 +9,17 @@ export const msgs = [
     },
     {
         msg: `Thời gian cứ thế trôi qua, tình yêu trong anh cũng dần lớn lên,
-        6 năm kể từ khi gặp em, chưa một ngày nào anh không nhớ về em, nhưng ở thời điểm trước
-        đây anh chỉ dám dừng lại ở đó, vì một thằng nhà nghèo, tương lai thì mịt mờ, làm sao
+        6 năm kể từ khi gặp em, chưa một ngày nào anh không nhớ về em, có những đêm anh còn mơ
+        thấy em, dáng em gầy đi vì phải làm việc vất vả, nhưng ở thời điểm đó
+        anh chỉ dám giữ ở trong lòng, vì một thằng nhà nghèo, tương lai thì mịt mờ, làm sao
         dám yêu em chứ.`
     },
     {
         msg: `Nhưng anh là một thằng con trai mà, cũng muốn có một người yêu
         để đồng hành, để yêu, để quan tâm chăm sóc, để âu yếm vuốt ve nuông chiều. Những khi ấy
         người đầu tiên và duy nhất xuất hiện trong tâm trí của anh luôn là <span>EM</span>. Nhiều
-        đêm anh đã khóc vì nhớ em, vì thấy sao lại có nhiều người có người yêu hạnh phúc thế.
-        Còn mình thì vẫn lẻ bóng cô đơn.`
+        đêm anh đã khóc vì nhớ em, vì thấy sao lại có nhiều người có người yêu hạnh phúc thế, 
+        còn mình thì vẫn lẻ bóng cô đơn.`
     },
     {
         msg: `Đó cũng là động lực để anh theo đuổi sự nghiệp thật nhanh để mong một ngày sớm có điều kiện

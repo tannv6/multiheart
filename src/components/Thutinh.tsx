@@ -5,6 +5,8 @@ import { msgs } from "../utils/constants";
 function Thutinh() {
     const elementRef = useRef<HTMLDivElement>(null);
     const [showHeart, setShowHeart] = useState(false);
+    const [heartColor, setHeartColor] = useState("white");
+    const refWrap = useRef<any>(null);
     useEffect(() => {
         const handleScroll = (elm?: any) => {
             const element: any = elementRef.current;
@@ -22,11 +24,13 @@ function Thutinh() {
                 }
             });
             if (((elm?.target?.scrollTop + elm?.target?.clientHeight) >= elm?.target?.scrollHeight - 10)) {
+                setHeartColor("red");
                 setShowHeart(true);
                 element?.childNodes.forEach((e: any) => {
-                    e.classList.add('show-heart')
+                    e.classList.add('show-heart');
                 });
             } else if (elm?.target?.scrollTop === 0) {
+                setHeartColor("white");
                 setShowHeart(false);
                 element?.childNodes.forEach((e: any) => {
                     e.classList.remove('show-heart')
@@ -40,8 +44,30 @@ function Thutinh() {
             thu?.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    return (<div className="thu_wrap" id="thu_wrap">
-        {showHeart && <Hearts />}
+    const translate = useRef(0);
+
+    const handleClick = (elm?: any) => {
+        !translate.current && setShowHeart((flag) => !flag)
+    }
+    const handleTouchStart = () => {
+        translate.current = 0;
+    }
+    const handleTouchEnd = () => {
+        const scrollTop = refWrap.current?.scrollTop;
+        if (scrollTop === 0 && translate.current) {
+            setShowHeart(true);
+        }
+    }
+    const handleTouchMove = () => {
+        translate.current = 1;
+    }
+    return (<div className="thu_wrap" id="thu_wrap" onClick={handleClick}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        onTouchMove={handleTouchMove}
+        ref={refWrap}
+    >
+        {showHeart && <Hearts heartColor={heartColor} key={heartColor} />}
         <div className="thu">
             <h3 className="title">Gửi tới em, người con gái anh dành cả thanh xuân để thương nhớ!</h3>
         </div>
