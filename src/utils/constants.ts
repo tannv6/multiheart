@@ -73,5 +73,8 @@ export const msgs = [
         người anh để bút trên tờ kết hôn chính là em... <br />
         Người cùng anh gánh chịu tất cả buồn vui, sướng khổ, áp lực trong cuộc sống vẫn là em... <br />
         Và cuối cùng người cùng anh đi hết cuộc đời này cũng vẫn sẽ luôn là em..!`
+    },
+    {
+        msg: `Đồng ý làm người yêu anh nhé! &#129392 &#128536 &#128536`
     }
 ];

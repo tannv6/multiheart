@@ -157,3 +157,30 @@ canvas {
   background-color: #1876f2de;
   margin: 0;
 }
+
+.mess {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #1877f2;
+  background-color: #fff;
+}
+
+textarea {
+  padding: 8px 20px 8px 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.mess img {
+  position: absolute;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

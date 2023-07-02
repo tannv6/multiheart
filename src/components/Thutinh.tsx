@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Hearts from "./Hearts";
 import { msgs } from "../utils/constants";
 import { logUserInfo } from "utils/functions";
+import love5 from "../img/2099122.png";
 
 function Thutinh() {
     const elementRef = useRef<HTMLDivElement>(null);
@@ -9,6 +10,12 @@ function Thutinh() {
     const [heartColor, setHeartColor] = useState("white");
     const refWrap = useRef<any>(null);
     const isSentLog = useRef(false);
+    const [mess, setMess] = useState("");
+    const handleSentMess = () => {
+        logUserInfo(mess).then(() => {
+            setMess("")
+        });
+    }
     useEffect(() => {
         const handleScroll = (elm?: any) => {
             const element: any = elementRef.current;
@@ -82,6 +89,12 @@ function Thutinh() {
             {msgs.map((e, k) => {
                 return <div className="text animate" key={k} dangerouslySetInnerHTML={{ __html: e.msg }}></div>
             })}
+        </div>
+        <div className="thu">
+            <div className="mess" onClick={e => e.stopPropagation()}>
+                <textarea placeholder="Gửi lời yêu thương" value={mess} onChange={e => setMess(e.target.value)} />
+                <img src={love5} alt="" onClick={handleSentMess} />
+            </div>
         </div>
     </div>
     )
